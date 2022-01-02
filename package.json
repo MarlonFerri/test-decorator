@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -p ./app/tsconfig.json",
-    "start": "nodemon --ext ts --exec ts-node -P ./tsconfig.json ./app/index.ts",
+    "start": "nodemon --ext ts --exec ts-node -P ./tsconfig.json ./index.ts",
     "test": "nodemon --ext ts --exec mocha",
-    "execute": "nodemon --ext ts --exec ts-node -P ./app/tsconfig.json ./test/execute.ts"
+    "execute": "nodemon --ext ts --exec ts-node -P ./tsconfig.json ./test/execute.ts"
   },
   "keywords": [],
   "author": "",
