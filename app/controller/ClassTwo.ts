@@ -1,18 +1,21 @@
+import { myConnectionDecorator } from "./MyDecorator";
 import MyInterface from "./MyInterface";
 
 export default class ClassTwo implements MyInterface
 {
     connect() {
-        throw new Error("Method not implemented.");
+        console.log(`I'm in function connect from ${this.constructor.name}`)
     }
     disconnect() {
-        throw new Error("Method not implemented.");
+        console.log(`I'm in function disconnect from ${this.constructor.name}`)
     }
+
+    
     doSomething() {
-        throw new Error("Method not implemented.");
+        console.log(`I'm in function doSomething from ${this.constructor.name}`)
     }
     doOtherthing() {
-        throw new Error("Method not implemented.");
+        console.log(`I'm in function doOtherthing from ${this.constructor.name}`)
     }
 
 }

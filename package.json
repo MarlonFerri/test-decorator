@@ -1,0 +1,29 @@
+{
+  "name": "workapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ./app/tsconfig.json",
+    "start": "nodemon --ext ts --exec ts-node -P ./tsconfig.json ./app/index.ts",
+    "test": "nodemon --ext ts --exec mocha",
+    "execute": "nodemon --ext ts --exec ts-node -P ./app/tsconfig.json ./test/execute.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "ts-mocha": "^8.0.0",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/inquirer": "^8.1.3",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "ts-node": "^10.4.0"
+  }
+}

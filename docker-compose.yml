@@ -3,5 +3,8 @@ services:
   typescript-project:
     image: marlonjferri/node-with-app
     container_name: typescipt-project
-    working-dir: /workapp
     command: tail -f /dev/null
+    volumes:
+      - .:/workapp
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: /workapp

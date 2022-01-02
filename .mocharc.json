@@ -1,0 +1,11 @@
+{
+    "require": "ts-node/register",
+    "extensions": [
+        "ts",
+        "tsx"
+    ],
+    "spec": [
+        "test/**/*"
+    ],
+    "compilerOptions":{"experimentalDecorators": true}
+}
